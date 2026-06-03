@@ -12,7 +12,7 @@
   --bg:#0d0f14;--bg2:#131720;--bg3:#1a1f2e;--bg4:#212840;
   --border:#2a3048;--border2:#3a4060;
   --text:#e8eaf0;--text2:#8b91a8;--text3:#5a6080;
-  --blue:#3b82f6;--blue-d:#1d4ed8;--blue-bg:#1e2d4a;
+  --white:#3b82f6;--white-d:#1d4ed8;--white-bg:#1e2d4a;
   --green:#22c55e;--green-d:#15803d;--green-bg:#0f2e1a;
   --amber:#f59e0b;--amber-d:#b45309;--amber-bg:#2d1f08;
   --red:#ef4444;--red-d:#b91c1c;--red-bg:#2d0f0f;
@@ -34,7 +34,7 @@ html,body{background:var(--bg);color:var(--text);font-family:var(--font);font-si
   padding:0 20px;display:flex;align-items:center;justify-content:space-between;
   height:52px;position:sticky;top:0;z-index:200;
 }
-.logo{font-family:var(--font-mono);font-size:14px;font-weight:700;color:var(--blue);letter-spacing:1px}
+.logo{font-family:var(--font-mono);font-size:14px;font-weight:700;color:var(--white);letter-spacing:1px}
 .logo span{color:var(--text2);font-weight:400}
 .header-kpis{display:flex;gap:24px;align-items:center}
 .hkpi{text-align:right}
@@ -42,15 +42,15 @@ html,body{background:var(--bg);color:var(--text);font-family:var(--font);font-si
 .hkpi-val{font-family:var(--font-mono);font-size:14px;font-weight:700}
 .header-actions{display:flex;gap:8px}
 .btn{background:var(--bg3);border:1px solid var(--border2);color:var(--text2);padding:6px 12px;border-radius:var(--r);cursor:pointer;font-size:11px;font-family:var(--font);transition:all .15s}
-.btn:hover{border-color:var(--blue);color:var(--blue)}
-.btn-primary{background:var(--blue-d);border-color:var(--blue);color:#fff}
-.btn-primary:hover{background:var(--blue);color:#fff}
+.btn:hover{border-color:var(--white);color:var(--white)}
+.btn-primary{background:var(--white-d);border-color:var(--white);color:#fff}
+.btn-primary:hover{background:var(--white);color:#fff}
 
 /* NAV TABS */
 #nav-tabs{background:var(--bg2);border-bottom:1px solid var(--border);padding:0 20px;display:flex;gap:2px;overflow-x:auto}
 .tab{background:none;border:none;border-bottom:2px solid transparent;color:var(--text3);padding:12px 16px 10px;cursor:pointer;font-family:var(--font);font-size:12px;font-weight:500;white-space:nowrap;transition:all .15s;display:flex;align-items:center;gap:6px}
 .tab:hover{color:var(--text2)}
-.tab.active{color:var(--blue);border-bottom-color:var(--blue)}
+.tab.active{color:var(--white);border-bottom-color:var(--white)}
 .tab-icon{font-size:14px}
 
 /* CONTENT */
@@ -62,7 +62,7 @@ html,body{background:var(--bg);color:var(--text);font-family:var(--font);font-si
 .scenario-strip label{font-size:10px;color:var(--text3);font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.8px}
 .scen-btn{background:var(--bg4);border:1px solid var(--border2);color:var(--text2);padding:5px 14px;border-radius:20px;cursor:pointer;font-size:11px;font-family:var(--font-mono);transition:all .15s}
 .scen-btn.s-cons.active{background:var(--green-bg);border-color:var(--green);color:var(--green)}
-.scen-btn.s-base.active{background:var(--blue-bg);border-color:var(--blue);color:var(--blue)}
+.scen-btn.s-base.active{background:var(--white-bg);border-color:var(--white);color:var(--white)}
 .scen-btn.s-hold.active{background:var(--amber-bg);border-color:var(--amber);color:var(--amber)}
 .strip-right{margin-left:auto;font-family:var(--font-mono);font-size:11px;color:var(--text3)}
 .strip-right strong{color:var(--cyan)}
@@ -71,7 +71,7 @@ html,body{background:var(--bg);color:var(--text);font-family:var(--font);font-si
 .kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:16px}
 .kpi{background:var(--bg3);border:1px solid var(--border);border-radius:var(--r2);padding:14px 16px;position:relative;overflow:hidden}
 .kpi::before{content:'';position:absolute;top:0;left:0;right:0;height:2px}
-.kpi.blue::before{background:var(--blue)}
+.kpi.white::before{background:var(--white)}
 .kpi.green::before{background:var(--green)}
 .kpi.amber::before{background:var(--amber)}
 .kpi.red::before{background:var(--red)}
@@ -122,7 +122,7 @@ td.neu{color:var(--text3);font-family:var(--font-mono)}
 
 /* BADGES */
 .badge{display:inline-block;padding:2px 7px;border-radius:4px;font-size:10px;font-family:var(--font-mono);font-weight:700}
-.badge-blue{background:var(--blue-bg);color:var(--blue);border:1px solid var(--blue-d)}
+.badge-white{background:var(--white-bg);color:var(--white);border:1px solid var(--white-d)}
 .badge-green{background:var(--green-bg);color:var(--green);border:1px solid var(--green-d)}
 .badge-amber{background:var(--amber-bg);color:var(--amber);border:1px solid var(--amber-d)}
 .badge-red{background:var(--red-bg);color:var(--red);border:1px solid var(--red-d)}
@@ -136,13 +136,13 @@ input[type=number],input[type=text],select{
   padding:5px 8px;border-radius:var(--r);font-family:var(--font-mono);font-size:11px;
   transition:border .15s;width:80px;text-align:right
 }
-input[type=number]:focus,input[type=text]:focus,select:focus{outline:none;border-color:var(--blue)}
+input[type=number]:focus,input[type=text]:focus,select:focus{outline:none;border-color:var(--white)}
 select{text-align:left;width:auto;padding:6px 10px;cursor:pointer}
 
 /* PROGRESS */
 .prog-wrap{background:var(--bg4);border-radius:99px;height:6px;overflow:hidden;margin-top:4px}
 .prog-bar{height:6px;border-radius:99px;transition:width .5s ease}
-.prog-blue{background:var(--blue)}
+.prog-white{background:var(--white)}
 .prog-green{background:var(--green)}
 .prog-amber{background:var(--amber)}
 .prog-red{background:var(--red)}
@@ -171,7 +171,7 @@ hr.dark{border:none;border-top:1px solid var(--border);margin:16px 0}
 .alert-strip{padding:10px 14px;border-radius:var(--r);margin-bottom:12px;font-size:12px;display:flex;gap:10px;align-items:flex-start;border-left:3px solid}
 .alert-green{background:var(--green-bg);border-color:var(--green);color:#86efac}
 .alert-amber{background:var(--amber-bg);border-color:var(--amber);color:#fcd34d}
-.alert-blue{background:var(--blue-bg);border-color:var(--blue);color:#93c5fd}
+.alert-white{background:var(--white-bg);border-color:var(--white);color:#93c5fd}
 .alert-red{background:var(--red-bg);border-color:var(--red);color:#fca5a5}
 
 /* TOTALS FOOTER */
@@ -215,7 +215,7 @@ hr.dark{border:none;border-top:1px solid var(--border);margin:16px 0}
     <div style="font-size:10px;color:var(--text3);font-family:var(--font-mono);margin-top:2px">LIMA → MADRID → EUROPA · FEB–MAR 2027 · 15 DÍAS TOUR</div>
   </div>
   <div class="header-kpis">
-    <div class="hkpi"><div class="hkpi-label">Presupuesto</div><div class="hkpi-val" id="h-budget" style="color:var(--blue)">$4,000</div></div>
+    <div class="hkpi"><div class="hkpi-label">Presupuesto</div><div class="hkpi-val" id="h-budget" style="color:var(--white)">$4,000</div></div>
     <div class="hkpi"><div class="hkpi-label">Proyectado</div><div class="hkpi-val" id="h-proj" style="color:var(--amber)">—</div></div>
     <div class="hkpi"><div class="hkpi-label">Real</div><div class="hkpi-val" id="h-real" style="color:var(--cyan)">$0</div></div>
     <div class="hkpi"><div class="hkpi-label">Margen</div><div class="hkpi-val" id="h-margin" style="color:var(--green)">—</div></div>
@@ -255,9 +255,9 @@ hr.dark{border:none;border-top:1px solid var(--border);margin:16px 0}
 
   <!-- KPI ROW 1 -->
   <div class="kpi-grid">
-    <div class="kpi blue">
+    <div class="kpi white">
       <div class="kpi-label">Presupuesto Total</div>
-      <div class="kpi-value" id="kpi-presupuesto" style="color:var(--blue)">$4,000</div>
+      <div class="kpi-value" id="kpi-presupuesto" style="color:var(--white)">$4,000</div>
       <div class="kpi-sub">USD disponibles tours Europa</div>
     </div>
     <div class="kpi amber">
@@ -289,9 +289,9 @@ hr.dark{border:none;border-top:1px solid var(--border);margin:16px 0}
 
   <!-- KPI ROW 2 — OPERACIONAL -->
   <div class="kpi-grid" style="grid-template-columns:repeat(auto-fit,minmax(140px,1fr));margin-bottom:16px">
-    <div class="kpi blue">
+    <div class="kpi white">
       <div class="kpi-label">Burn Rate Planif.</div>
-      <div class="kpi-value" id="kpi-burn-plan" style="color:var(--blue);font-size:18px">—</div>
+      <div class="kpi-value" id="kpi-burn-plan" style="color:var(--white);font-size:18px">—</div>
       <div class="kpi-sub">USD/día promedio</div>
     </div>
     <div class="kpi cyan">
@@ -309,9 +309,9 @@ hr.dark{border:none;border-top:1px solid var(--border);margin:16px 0}
       <div class="kpi-value" id="kpi-dias-rest" style="color:var(--green);font-size:18px">15</div>
       <div class="kpi-sub">de 15 días tour</div>
     </div>
-    <div class="kpi blue">
+    <div class="kpi white">
       <div class="kpi-label">Costo/Día Acum.</div>
-      <div class="kpi-value" id="kpi-cpd" style="color:var(--blue);font-size:18px">—</div>
+      <div class="kpi-value" id="kpi-cpd" style="color:var(--white);font-size:18px">—</div>
       <div class="kpi-sub">Promedio días con data</div>
     </div>
     <div class="kpi purple">
@@ -391,7 +391,7 @@ hr.dark{border:none;border-top:1px solid var(--border);margin:16px 0}
 
   <!-- Resumen Live -->
   <div class="kpi-grid" style="grid-template-columns:repeat(4,1fr);margin-bottom:14px">
-    <div class="kpi blue"><div class="kpi-label">Total Presup. 15 días</div><div class="kpi-value" id="d-tot-presup" style="color:var(--blue);font-size:18px">—</div></div>
+    <div class="kpi white"><div class="kpi-label">Total Presup. 15 días</div><div class="kpi-value" id="d-tot-presup" style="color:var(--white);font-size:18px">—</div></div>
     <div class="kpi cyan"><div class="kpi-label">Real Registrado</div><div class="kpi-value" id="d-tot-real" style="color:var(--cyan);font-size:18px">$0</div></div>
     <div class="kpi green"><div class="kpi-label">Diferencia Acum.</div><div class="kpi-value" id="d-tot-diff" style="font-size:18px">—</div></div>
     <div class="kpi amber"><div class="kpi-label">Proyección Ajustada</div><div class="kpi-value" id="d-tot-proj" style="color:var(--amber);font-size:18px">—</div></div>
@@ -619,14 +619,14 @@ hr.dark{border:none;border-top:1px solid var(--border);margin:16px 0}
       <table class="data-table">
         <thead><tr><th>Ciudad</th><th>Hotel</th><th class="text-right">€/noche</th><th>Noches</th><th class="text-right">Total €</th><th>Link</th><th>Estado</th></tr></thead>
         <tbody>
-          <tr><td>🇫🇷 París</td><td>Hotel du Vieux Marais</td><td class="mono text-right">€130</td><td class="mono text-right">3</td><td class="mono text-right">€390</td><td><a href="https://www.booking.com" style="color:var(--blue);font-size:11px">booking.com ↗</a></td><td><span class="badge badge-amber">Pendiente</span></td></tr>
-          <tr><td>🇨🇭 Lucerna</td><td>ibis Styles Luzern City</td><td class="mono text-right">€140</td><td class="mono text-right">2</td><td class="mono text-right">€280</td><td><a href="https://www.booking.com/hotel/ch/ibis-styles-luzern-city.html" style="color:var(--blue);font-size:11px">booking.com ↗</a></td><td><span class="badge badge-amber">Pendiente</span></td></tr>
-          <tr><td>🇨🇭 Interlaken</td><td>Hotel Beausite Interlaken</td><td class="mono text-right">€140</td><td class="mono text-right">1</td><td class="mono text-right">€140</td><td><a href="https://www.booking.com/hotel/ch/beausite-interlaken.html" style="color:var(--blue);font-size:11px">booking.com ↗</a></td><td><span class="badge badge-amber">Pendiente</span></td></tr>
-          <tr><td>🇮🇹 Roma</td><td>Hotel Nazionale Roma</td><td class="mono text-right">€100</td><td class="mono text-right">3</td><td class="mono text-right">€300</td><td><a href="https://www.booking.com/hotel/it/nazionale.html" style="color:var(--blue);font-size:11px">booking.com ↗</a></td><td><span class="badge badge-amber">Pendiente</span></td></tr>
-          <tr><td>🇮🇹 Florencia</td><td>Hotel Delle Nazioni</td><td class="mono text-right">€100</td><td class="mono text-right">1</td><td class="mono text-right">€100</td><td><a href="https://www.booking.com/hotel/it/delle-nazioni.html" style="color:var(--blue);font-size:11px">booking.com ↗</a></td><td><span class="badge badge-amber">Pendiente</span></td></tr>
-          <tr><td>🇮🇹 Venecia</td><td>Hotel Palazzo Vitturi</td><td class="mono text-right">€100</td><td class="mono text-right">1</td><td class="mono text-right">€100</td><td><a href="https://www.booking.com/hotel/it/palazzo-vitturi.html" style="color:var(--blue);font-size:11px">booking.com ↗</a></td><td><span class="badge badge-amber">Pendiente</span></td></tr>
-          <tr><td>🇳🇱 Ámsterdam</td><td>The Social Hub Amsterdam</td><td class="mono text-right">€120</td><td class="mono text-right">2</td><td class="mono text-right">€240</td><td><a href="https://www.booking.com/hotel/nl/the-student-hotel-amsterdam-city.html" style="color:var(--blue);font-size:11px">booking.com ↗</a></td><td><span class="badge badge-amber">Pendiente</span></td></tr>
-          <tr><td>🇨🇿 Praga</td><td>Hotel Golden Crown</td><td class="mono text-right">€85</td><td class="mono text-right">2</td><td class="mono text-right">€170</td><td><a href="https://www.booking.com/hotel/cz/golden-crown.html" style="color:var(--blue);font-size:11px">booking.com ↗</a></td><td><span class="badge badge-amber">Pendiente</span></td></tr>
+          <tr><td>🇫🇷 París</td><td>Hotel du Vieux Marais</td><td class="mono text-right">€130</td><td class="mono text-right">3</td><td class="mono text-right">€390</td><td><a href="https://www.booking.com" style="color:var(--white);font-size:11px">booking.com ↗</a></td><td><span class="badge badge-amber">Pendiente</span></td></tr>
+          <tr><td>🇨🇭 Lucerna</td><td>ibis Styles Luzern City</td><td class="mono text-right">€140</td><td class="mono text-right">2</td><td class="mono text-right">€280</td><td><a href="https://www.booking.com/hotel/ch/ibis-styles-luzern-city.html" style="color:var(--white);font-size:11px">booking.com ↗</a></td><td><span class="badge badge-amber">Pendiente</span></td></tr>
+          <tr><td>🇨🇭 Interlaken</td><td>Hotel Beausite Interlaken</td><td class="mono text-right">€140</td><td class="mono text-right">1</td><td class="mono text-right">€140</td><td><a href="https://www.booking.com/hotel/ch/beausite-interlaken.html" style="color:var(--white);font-size:11px">booking.com ↗</a></td><td><span class="badge badge-amber">Pendiente</span></td></tr>
+          <tr><td>🇮🇹 Roma</td><td>Hotel Nazionale Roma</td><td class="mono text-right">€100</td><td class="mono text-right">3</td><td class="mono text-right">€300</td><td><a href="https://www.booking.com/hotel/it/nazionale.html" style="color:var(--white);font-size:11px">booking.com ↗</a></td><td><span class="badge badge-amber">Pendiente</span></td></tr>
+          <tr><td>🇮🇹 Florencia</td><td>Hotel Delle Nazioni</td><td class="mono text-right">€100</td><td class="mono text-right">1</td><td class="mono text-right">€100</td><td><a href="https://www.booking.com/hotel/it/delle-nazioni.html" style="color:var(--white);font-size:11px">booking.com ↗</a></td><td><span class="badge badge-amber">Pendiente</span></td></tr>
+          <tr><td>🇮🇹 Venecia</td><td>Hotel Palazzo Vitturi</td><td class="mono text-right">€100</td><td class="mono text-right">1</td><td class="mono text-right">€100</td><td><a href="https://www.booking.com/hotel/it/palazzo-vitturi.html" style="color:var(--white);font-size:11px">booking.com ↗</a></td><td><span class="badge badge-amber">Pendiente</span></td></tr>
+          <tr><td>🇳🇱 Ámsterdam</td><td>The Social Hub Amsterdam</td><td class="mono text-right">€120</td><td class="mono text-right">2</td><td class="mono text-right">€240</td><td><a href="https://www.booking.com/hotel/nl/the-student-hotel-amsterdam-city.html" style="color:var(--white);font-size:11px">booking.com ↗</a></td><td><span class="badge badge-amber">Pendiente</span></td></tr>
+          <tr><td>🇨🇿 Praga</td><td>Hotel Golden Crown</td><td class="mono text-right">€85</td><td class="mono text-right">2</td><td class="mono text-right">€170</td><td><a href="https://www.booking.com/hotel/cz/golden-crown.html" style="color:var(--white);font-size:11px">booking.com ↗</a></td><td><span class="badge badge-amber">Pendiente</span></td></tr>
         </tbody>
       </table>
     </div>
@@ -648,13 +648,13 @@ hr.dark{border:none;border-top:1px solid var(--border);margin:16px 0}
       <table class="data-table">
         <thead><tr><th>Tramo</th><th>Tipo</th><th>Aerolínea</th><th>Duración</th><th class="text-right">Rango EUR</th><th class="text-right">Est. Prom. EUR</th><th class="text-right">Est. USD</th><th>Ventana Compra</th><th>Tip</th></tr></thead>
         <tbody>
-          <tr><td><strong>Madrid → París</strong></td><td><span class="badge badge-blue">Avión</span></td><td>Vueling/Iberia/Ryan</td><td>2h</td><td class="mono text-right">€60–€110</td><td class="mono text-right">€80</td><td class="mono text-right">$86</td><td class="mono" style="color:var(--amber)">Oct–Nov 2026</td><td style="font-size:11px">Vuelo madrugada más barato</td></tr>
+          <tr><td><strong>Madrid → París</strong></td><td><span class="badge badge-white">Avión</span></td><td>Vueling/Iberia/Ryan</td><td>2h</td><td class="mono text-right">€60–€110</td><td class="mono text-right">€80</td><td class="mono text-right">$86</td><td class="mono" style="color:var(--amber)">Oct–Nov 2026</td><td style="font-size:11px">Vuelo madrugada más barato</td></tr>
           <tr><td><strong>París → Lucerna</strong></td><td><span class="badge badge-green">Tren TGV</span></td><td>SNCF + SBB</td><td>4h 30min</td><td class="mono text-right">€45–€90</td><td class="mono text-right">€60</td><td class="mono text-right">$65</td><td class="mono" style="color:var(--amber)">Nov 2026</td><td style="font-size:11px">Más cómodo que avión, +paisaje</td></tr>
-          <tr><td><strong>Lucerna → Roma</strong></td><td><span class="badge badge-blue">Avión</span></td><td>EasyJet/Swiss</td><td>1h 40min</td><td class="mono text-right">€60–€110</td><td class="mono text-right">€85</td><td class="mono text-right">$92</td><td class="mono" style="color:var(--amber)">Nov 2026</td><td style="font-size:11px">Sale desde Zúrich (ZRH)</td></tr>
+          <tr><td><strong>Lucerna → Roma</strong></td><td><span class="badge badge-white">Avión</span></td><td>EasyJet/Swiss</td><td>1h 40min</td><td class="mono text-right">€60–€110</td><td class="mono text-right">€85</td><td class="mono text-right">$92</td><td class="mono" style="color:var(--amber)">Nov 2026</td><td style="font-size:11px">Sale desde Zúrich (ZRH)</td></tr>
           <tr><td><strong>Roma → Florencia</strong></td><td><span class="badge badge-green">Tren</span></td><td>Trenitalia Frecciarossa</td><td>1h 30min</td><td class="mono text-right">€25–€55</td><td class="mono text-right">€35</td><td class="mono text-right">$38</td><td class="mono" style="color:var(--cyan)">Ene 2027</td><td style="font-size:11px">Alta velocidad, muy puntual</td></tr>
           <tr><td><strong>Florencia → Venecia</strong></td><td><span class="badge badge-green">Tren</span></td><td>Trenitalia</td><td>2h</td><td class="mono text-right">€20–€40</td><td class="mono text-right">€35</td><td class="mono text-right">$38</td><td class="mono" style="color:var(--cyan)">Ene 2027</td><td style="font-size:11px">Trenes frecuentes, flexible</td></tr>
-          <tr><td><strong>Venecia → Ámsterdam</strong></td><td><span class="badge badge-blue">Avión</span></td><td>Ryanair/EasyJet</td><td>2h 10min</td><td class="mono text-right">€70–€130</td><td class="mono text-right">€100</td><td class="mono text-right">$108</td><td class="mono" style="color:var(--amber)">Nov–Dic 2026</td><td style="font-size:11px">VCE o TSF (Treviso, más barato)</td></tr>
-          <tr><td><strong>Ámsterdam → Praga</strong></td><td><span class="badge badge-blue">Avión</span></td><td>Transavia/Wizz</td><td>1h 50min</td><td class="mono text-right">€55–€100</td><td class="mono text-right">€75</td><td class="mono text-right">$81</td><td class="mono" style="color:var(--cyan)">Ene 2027</td><td style="font-size:11px">Cuidado con equipaje de mano</td></tr>
+          <tr><td><strong>Venecia → Ámsterdam</strong></td><td><span class="badge badge-white">Avión</span></td><td>Ryanair/EasyJet</td><td>2h 10min</td><td class="mono text-right">€70–€130</td><td class="mono text-right">€100</td><td class="mono text-right">$108</td><td class="mono" style="color:var(--amber)">Nov–Dic 2026</td><td style="font-size:11px">VCE o TSF (Treviso, más barato)</td></tr>
+          <tr><td><strong>Ámsterdam → Praga</strong></td><td><span class="badge badge-white">Avión</span></td><td>Transavia/Wizz</td><td>1h 50min</td><td class="mono text-right">€55–€100</td><td class="mono text-right">€75</td><td class="mono text-right">$81</td><td class="mono" style="color:var(--cyan)">Ene 2027</td><td style="font-size:11px">Cuidado con equipaje de mano</td></tr>
         </tbody>
         <tfoot>
           <tr><td colspan="5"><strong>TOTAL VUELOS/TRENES INTERNOS</strong></td><td class="mono text-right">€470</td><td class="mono text-right"><strong>$508</strong></td><td colspan="2" style="font-size:11px;color:var(--text3)">Escenario base estimado</td></tr>
@@ -690,7 +690,7 @@ hr.dark{border:none;border-top:1px solid var(--border);margin:16px 0}
           <div class="cfg-row"><div class="cfg-info"><div class="cfg-label">🇳🇱 Ámsterdam</div></div><div><input type="number" id="cfg-d-amsterdam" value="2" min="1" max="6"> <span style="font-size:10px;color:var(--text3)">noches</span></div></div>
           <div class="cfg-row"><div class="cfg-info"><div class="cfg-label">🇨🇿 Praga</div></div><div><input type="number" id="cfg-d-praga" value="2" min="1" max="5"> <span style="font-size:10px;color:var(--text3)">noches</span></div></div>
           <div style="background:var(--bg4);border-radius:var(--r);padding:10px;margin-top:10px;font-family:var(--font-mono);font-size:11px">
-            Total: <strong id="cfg-total-nights" style="color:var(--blue)">15</strong> noches / <strong id="cfg-total-days" style="color:var(--blue)">16</strong> días de viaje
+            Total: <strong id="cfg-total-nights" style="color:var(--white)">15</strong> noches / <strong id="cfg-total-days" style="color:var(--white)">16</strong> días de viaje
           </div>
         </div>
       </div>
@@ -714,7 +714,7 @@ hr.dark{border:none;border-top:1px solid var(--border);margin:16px 0}
           <div class="cfg-row"><div class="cfg-info"><div class="cfg-label">Ámsterdam (€/día)</div></div><div><input type="number" id="cfg-f-amsterdam" value="45" min="20" max="120"> <span style="font-size:10px;color:var(--text3)">€</span></div></div>
           <div class="cfg-row"><div class="cfg-info"><div class="cfg-label">Praga (€/día)</div></div><div><input type="number" id="cfg-f-praga" value="30" min="15" max="100"> <span style="font-size:10px;color:var(--text3)">€</span></div></div>
         </div>
-        <button onclick="applyConfig()" style="width:100%;background:var(--blue-d);border:1px solid var(--blue);color:#fff;padding:10px;border-radius:var(--r);cursor:pointer;font-family:var(--font-mono);font-size:12px;margin-top:8px">↺ APLICAR Y RECALCULAR TODO</button>
+        <button onclick="applyConfig()" style="width:100%;background:var(--white-d);border:1px solid var(--white);color:#fff;padding:10px;border-radius:var(--r);cursor:pointer;font-family:var(--font-mono);font-size:12px;margin-top:8px">↺ APLICAR Y RECALCULAR TODO</button>
       </div>
     </div>
   </div>
@@ -1128,8 +1128,8 @@ function renderDiarioTable() {
     const diffCls=diff===null?'neu':diff>=0?'pos':'neg';
     const diffStr=diff===null?'—':(diff>=0?'+':'')+' $'+Math.abs(Math.round(diff));
     const pctStr=diffPct===null?'—':(diffPct>=0?'+':'')+diffPct.toFixed(1)+'%';
-    const sem=r!==null?getSemaforo((cumReal/cumPlan)*100):{type:'blue',label:'PENDIENTE'};
-    const semBadge=r===null?`<span class="badge badge-blue">PENDIENTE</span>`:sem.type==='green'?`<span class="badge badge-green">OK</span>`:sem.type==='amber'?`<span class="badge badge-amber">ATENCIÓN</span>`:`<span class="badge badge-red">EXCEDIDO</span>`;
+    const sem=r!==null?getSemaforo((cumReal/cumPlan)*100):{type:'white',label:'PENDIENTE'};
+    const semBadge=r===null?`<span class="badge badge-white">PENDIENTE</span>`:sem.type==='green'?`<span class="badge badge-green">OK</span>`:sem.type==='amber'?`<span class="badge badge-amber">ATENCIÓN</span>`:`<span class="badge badge-red">EXCEDIDO</span>`;
     html+=`<tr>
       <td class="mono text-center" style="color:var(--text3)">D${d.day}</td>
       <td class="mono" style="font-size:11px;color:var(--text3)">${d.date}</td>
@@ -1301,7 +1301,7 @@ function updateKPIs() {
         </div>
         <div style="background:var(--bg);border-radius:var(--r);padding:12px;text-align:center">
           <div class="kpi-label">Costo/día plan</div>
-          <div class="kpi-value" style="font-size:16px;color:var(--blue)">$${burnPlan}</div>
+          <div class="kpi-value" style="font-size:16px;color:var(--white)">$${burnPlan}</div>
         </div>
       </div>`;
   }
@@ -1313,7 +1313,7 @@ function updateKPIs() {
     if(margin<0) alerts+=`<div class="alert-strip alert-red"><span>⚠</span><div><strong>ALERTA:</strong> El presupuesto proyectado ($${Math.round(t.grandTotal).toLocaleString()}) excede el asignado ($${budget.toLocaleString()}) en $${Math.abs(Math.round(margin)).toLocaleString()}. Considera reducir noches en Suiza o saltar Praga.</div></div>`;
     if(margin>=0&&margin<300) alerts+=`<div class="alert-strip alert-amber"><span>△</span><div><strong>MARGEN AJUSTADO:</strong> Quedan $${Math.round(margin).toLocaleString()} de margen. Fondo emergencia recomendado: $${emergAmt.toLocaleString()}. Evita gastos no planificados.</div></div>`;
     if(margin>=300) alerts+=`<div class="alert-strip alert-green"><span>✓</span><div><strong>PRESUPUESTO EN RANGO:</strong> Margen de $${Math.round(margin).toLocaleString()} disponible sobre el total proyectado. Fondo emergencia reservado: $${emergAmt.toLocaleString()}.</div></div>`;
-    alerts+=`<div class="alert-strip alert-blue"><span>✈</span><div><strong>VUELO LIM-MAD:</strong> S/3,220 (~$860 USD, Air Canada) es precio competitivo. Con 8 meses de anticipación: COMPRA AHORA. Históricamente sube $150-300 en los 3 meses previos.</div></div>`;
+    alerts+=`<div class="alert-strip alert-white"><span>✈</span><div><strong>VUELO LIM-MAD:</strong> S/3,220 (~$860 USD, Air Canada) es precio competitivo. Con 8 meses de anticipación: COMPRA AHORA. Históricamente sube $150-300 en los 3 meses previos.</div></div>`;
     alertsEl.innerHTML=alerts;
   }
 }
